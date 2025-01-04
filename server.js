@@ -10,6 +10,8 @@ app.use(cors(), express.json(), express.urlencoded({ extended: true })); // Midd
 require('./routes/Usuario.Routes')(app);
 require('./routes/Turno.Routes')(app);
 require('./routes/Asistencia.Routes')(app);
+require('./routes/ProductoCategoria.Routes')(app);
+require('./routes/Producto.Routes')(app);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

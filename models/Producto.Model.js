@@ -23,10 +23,11 @@ const Producto = sequelize.define(
         key: 'id'
       },
       allowNull: false,
-      ondeDelete: 'CASCADE'
+      onDelete: 'CASCADE',
+      onUpdate: 'CASCADE'
     },
     imagen: {
-      type:DataTypes.BLOB,
+      type:DataTypes.BLOB('long'),
       allowNull: true
     }
   },
